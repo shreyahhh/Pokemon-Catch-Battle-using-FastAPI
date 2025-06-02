@@ -4,7 +4,7 @@ A simple web-based Pokemon catching and battling game built with FastAPI for the
 
 ## Game Preview
 
-![Game Preview](https://raw.githubusercontent.com/YOUR_USERNAME/Pokemon-Catch-Battle/main/docs/game_preview.png)
+![Game Preview](https://github.com/user-attachments/assets/2c3d8183-09ae-4f23-ae1a-a4b1ac506e6c)
 
 ## Backend (MCP Server)
 
@@ -59,4 +59,4 @@ In battles, each Pokemon's base stats (HP, Attack, Defense, etc.) are summed to 
 
     Open your web browser and go to `http://127.0.0.1:8000`.
 
-    You can also access the API documentation at `http://127.0.0.1:8000/docs`. 
+    You can also access the API documentation at `http://127.0.0.1:8000/docs`.
