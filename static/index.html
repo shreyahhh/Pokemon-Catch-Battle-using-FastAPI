@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon-Catch&Battle</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" class="title-pokemon">
+                <h1>Pokemon-Catch&Battle</h1>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard" class="title-pokemon">
+            </div>
+            <div id="score-display">Score: <span id="score">0</span></div>
+        </header>
+
+        <main>
+            <div class="game-controls">
+                <button id="start-game" class="btn primary pokeball-btn">
+                    <span class="pokeball-icon"></span>
+                    Start New Game
+                </button>
+                <button id="catch-pokemon" class="btn pokeball-btn" disabled>
+                    <span class="pokeball-icon"></span>
+                    Catch Pokemon
+                </button>
+            </div>
+
+            <div class="game-area">
+                <div class="team-section">
+                    <h2>Your Team <span class="team-count">(0/6)</span></h2>
+                    <div id="team-display" class="pokemon-grid"></div>
+                </div>
+
+                <div class="battle-section">
+                    <h2>Battle Arena</h2>
+                    <div id="battle-display" class="battle-arena">
+                        <div class="pokemon-card player">
+                            <div class="pokemon-image"></div>
+                            <div class="pokemon-name"></div>
+                            <div class="pokemon-power"></div>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="pokemon-card opponent">
+                            <div class="pokemon-image"></div>
+                            <div class="pokemon-name"></div>
+                            <div class="pokemon-power"></div>
+                        </div>
+                    </div>
+                    <div id="battle-message" class="battle-message"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 
