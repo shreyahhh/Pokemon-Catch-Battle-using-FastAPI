@@ -1,15 +1,8 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "MCP.py",
-            "use": "@vercel/python"
-        },
-        {
-            "src": "static/**",
-            "use": "@vercel/static"
-        }
-    ],
+    "buildCommand": "pip install -r requirements.txt",
+    "outputDirectory": ".",
+    "framework": "fastapi",
     "routes": [
         {
             "src": "/static/(.*)",
