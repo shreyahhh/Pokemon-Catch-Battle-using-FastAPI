@@ -290,3 +290,8 @@ async def end_game(session_id: str):
         status_code=status.HTTP_404_NOT_FOUND,
         detail="Game session not found"
     )
+
+# Vercel compatibility: expose 'app' at module level
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
