@@ -30,7 +30,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 async def read_root():
     try:
-        return FileResponse("static/index.html")
+        index_path = os.path.join(os.path.dirname(__file__), "static", "index.html")
+        return FileResponse(index_path)
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

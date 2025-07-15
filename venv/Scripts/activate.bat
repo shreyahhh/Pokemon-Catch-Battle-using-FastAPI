@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Placement\RESUME\SCOPELY_UI\venv
+set VIRTUAL_ENV=D:\Placement\RESUME\GitHub\Pokemon-Catch-Battle-using-FastAPI\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
