@@ -3,11 +3,11 @@
     "builds": [
       {
         "src": "pokemon_api.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python",
+        "includeFiles": [
+          "static/**"
+        ]
       }
-    ],
-    "includeFiles": [
-      "static/**"
     ],
     "routes": [
       {
