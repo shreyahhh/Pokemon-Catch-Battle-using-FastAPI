@@ -1,22 +1,19 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "pokemon_api.py",
-        "use": "@vercel/python",
-        "includeFiles": [
-          "static/**"
-        ]
-      }
+        {
+            "src": "pokemon_api.py",
+            "use": "@vercel/python"
+        }
     ],
     "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "pokemon_api.py"
-      }
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "pokemon_api.py"
+        }
     ]
-  }
+} 
