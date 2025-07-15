@@ -8,7 +8,7 @@ A simple web-based Pokemon catching and battling game built with FastAPI for the
 
 ## Backend
 
-The `MCP.py` file runs the FastAPI server, acting as the backend. It manages game sessions, fetches Pokemon data from an external API, and handles game logic like catching and battling.
+The `pokemon_api.py` file runs the FastAPI server, acting as the backend. It manages game sessions, fetches Pokemon data from an external API, and handles game logic like catching and battling.
 
 ## Battle Winner Calculation
 
@@ -52,7 +52,7 @@ In battles, each Pokemon's base stats (HP, Attack, Defense, etc.) are summed to 
 5.  **Run the FastAPI server:**
 
     ```bash
-    uvicorn MCP:app --host 0.0.0.0 --port 8000 --reload
+    uvicorn pokemon_api:app --host 0.0.0.0 --port 8000 --reload
     ```
 
 6.  **Access the game:**
