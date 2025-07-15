@@ -6,7 +6,7 @@ A simple web-based Pokemon catching and battling game built with FastAPI for the
 
 ![Game Preview](https://github.com/user-attachments/assets/2c3d8183-09ae-4f23-ae1a-a4b1ac506e6c)
 
-## Backend (MCP Server)
+## Backend
 
 The `MCP.py` file runs the FastAPI server, acting as the backend. It manages game sessions, fetches Pokemon data from an external API, and handles game logic like catching and battling.
 
