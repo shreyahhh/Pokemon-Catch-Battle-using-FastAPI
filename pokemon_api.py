@@ -30,7 +30,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/")
 async def read_root():
     try:
-        index_path = os.path.join(os.path.dirname(__file__), "static", "index.html")
+        index_path = os.path.join(os.path.dirname(__file__), "templates", "index.html")
         return FileResponse(index_path)
     except Exception as e:
         raise HTTPException(
